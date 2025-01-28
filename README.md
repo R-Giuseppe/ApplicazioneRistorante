@@ -48,3 +48,17 @@ Ricotta di pecora,  Zucchero, Gocce di cioccolato fondente
 - Amaro del capo
 - Jefferson
 - Numero uno
+
+### Secondi piatti
+
+## Pollo alla cacciatora
+Pollo cotto in un sugo di pomodoro, cipolla, aglio, olive nere, capperi, vino rosso, rosmarino.
+## Arrosto di vitello
+Vitello cotto con rosmarino, salvia, vino bianco e brodo.
+## Spezzatino di manzo
+Manzo cotto in un sugo di pomodoro, cipolla, vino rosso, brodo, rosmarino e alloro.
+## Scaloppine al limone
+Vitello in padella con burro, succo di limone, vino bianco e prezzemolo.
+## Bistecca alla fiorentina
+Bistecca di manzo cotta sulla griglia, servita con olio d'oliva e pepe nero.
+
