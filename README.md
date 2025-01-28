@@ -1,5 +1,19 @@
 # ApplicazioneRistorante
 
+
+### Primi Piatti 
+
+## Pappardelle 
+Pasta l'uovo con sugo al Cinghiale 
+## Lasagna
+Pasta all'uovo con carne macinata, uovo e mozzarella
+## Gnocchi
+Pasta all'uovo con sugo al Ragu'
+## Paccheri
+Pasta secca con Tartufo e Funghi Porcini
+## Spaghetti
+Pasta secca con condimento "alla Carbonara"
+
 ## Dessert
 
 ### Tiramisù classico
@@ -12,3 +26,25 @@ Farina Manitoba, Burro, Zucchero, Uova, Lievito di birra fresco, sale fino
 Mele Golden, Zucchero, Pangrattato, Burro, Uvetta, Pinoli tostati, Cannella in polvere, Rum, Scorza di limone
 ### Cannoli siciliani
 Ricotta di pecora,  Zucchero, Gocce di cioccolato fondente
+
+### Bevande alcoliche:
+- Vino rosso 
+- Vino bianco
+- Vino rosato
+- Prosecco
+- Birra
+
+### Bevande analcoliche:
+- Acqua naturale
+- Acqua frizzante
+- Coca-Cola
+- Fanta
+- Sprite
+
+### Caffè e amari:
+- Espresso
+- Macchiato
+- Ginseng
+- Amaro del capo
+- Jefferson
+- Numero uno
