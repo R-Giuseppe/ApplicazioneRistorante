@@ -35,5 +35,10 @@
 - Jefferson
 - Numero uno
 
-
-
+### Antipasti:
+- Crostini con senape, prosciutto cotto e formaggio
+- Quesadilla all'italiana con Asiago
+- Omeletta di patate, Trentino-Alto Adige
+- Mini canederli con sugo alla puttanesca
+- Montanarine
+- Gamberi al miele e pan di spezie abbrustolito
