@@ -1,5 +1,13 @@
 # ApplicazioneRistorante
 
+### Antipasti:
+- Crostini con senape, prosciutto cotto e formaggio
+- Quesadilla all'italiana con Asiago
+- Omeletta di patate, Trentino-Alto Adige
+- Mini canederli con sugo alla puttanesca
+- Montanarine
+- Gamberi al miele e pan di spezie abbrustolito
+- Nuovo antipasto
 
 ### Primi Piatti 
 
@@ -14,6 +22,20 @@ Pasta secca con Tartufo e Funghi Porcini
 ## Spaghetti
 Pasta secca con condimento "alla Carbonara"
 
+### Secondi piatti
+
+## Pollo alla cacciatora
+Pollo cotto in un sugo di pomodoro, cipolla, aglio, olive nere, capperi, vino rosso, rosmarino.
+## Arrosto di vitello
+Vitello cotto con rosmarino, salvia, vino bianco e brodo.
+## Spezzatino di manzo
+Manzo cotto in un sugo di pomodoro, cipolla, vino rosso, brodo, rosmarino e alloro.
+## Scaloppine al limone
+Vitello in padella con burro, succo di limone, vino bianco e prezzemolo.
+## Bistecca alla fiorentina
+Bistecca di manzo cotta sulla griglia, servita con olio d'oliva e pepe nero.
+
+
 ## Dessert
 
 ### Tiramisù classico
@@ -26,6 +48,7 @@ Farina Manitoba, Burro, Zucchero, Uova, Lievito di birra fresco, sale fino
 Mele Golden, Zucchero, Pangrattato, Burro, Uvetta, Pinoli tostati, Cannella in polvere, Rum, Scorza di limone
 ### Cannoli siciliani
 Ricotta di pecora,  Zucchero, Gocce di cioccolato fondente
+
 
 ### Bevande alcoliche:
 - Vino rosso 
@@ -48,17 +71,3 @@ Ricotta di pecora,  Zucchero, Gocce di cioccolato fondente
 - Amaro del capo
 - Jefferson
 - Numero uno
-
-### Secondi piatti
-
-## Pollo alla cacciatora
-Pollo cotto in un sugo di pomodoro, cipolla, aglio, olive nere, capperi, vino rosso, rosmarino.
-## Arrosto di vitello
-Vitello cotto con rosmarino, salvia, vino bianco e brodo.
-## Spezzatino di manzo
-Manzo cotto in un sugo di pomodoro, cipolla, vino rosso, brodo, rosmarino e alloro.
-## Scaloppine al limone
-Vitello in padella con burro, succo di limone, vino bianco e prezzemolo.
-## Bistecca alla fiorentina
-Bistecca di manzo cotta sulla griglia, servita con olio d'oliva e pepe nero.
-
