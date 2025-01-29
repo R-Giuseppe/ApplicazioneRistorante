@@ -43,3 +43,4 @@
 - Montanarine
 - Gamberi al miele e pan di spezie abbrustolito
 - Nuovo antipasto
+- Caprese
