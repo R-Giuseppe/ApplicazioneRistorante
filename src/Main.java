@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-
-        System.out.println("\u001B[34m# ApplicazioneRistorante\n" +
+        System.out.println("APPLICAZIONE RISTORANTE\n");
+        System.out.println("\u001B[34m " +
                 "\n" +
                 "### Bevande alcoliche:\n" +
                 "- Vino rosso \n" +
