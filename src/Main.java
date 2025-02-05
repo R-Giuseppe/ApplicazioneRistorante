@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+
         System.out.println("\u001B[34m# ApplicazioneRistorante\n" +
                 "\n" +
                 "### Bevande alcoliche:\n" +
@@ -23,5 +24,6 @@ public class Main {
                 "- Amaro del capo\n" +
                 "- Jefferson\n" +
                 "- Numero uno");
+
     }
 }
