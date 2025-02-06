@@ -1,23 +1,23 @@
 public class Main {
     public static void main(String[] args) {
-<<<<<<< HEAD
-
-        System.out.println("### Primi Piatti: ");
-        System.out.println("\u001B[34m " +
-                "\n" +
-        ("-Pappardelle");
-        "- Pasta l'uovo con sugo al Cinghiale\n");
-        (-"Lasagna\n");
-        ("-Pasta all'uovo con carne macinata, uovo e mozzarella\n");
-        ("-Gnocchi\n");
-        ("-Pasta all'uovo con sugo al Ragu'\n");
-        ("-Paccheri\n");
-        ("-Pasta secca con Tartufo e Funghi Porcini\n");
-        ("-Spaghetti\n");
-        (-"Pasta secca con condimento alla Carbonara\n"));
 
 
-=======
+        System.out.println("\u001B[34m " + "### Primi Piatti:\n "+
+
+        "\n" +
+        "-Pappardelle\n"+
+        "Pasta all'uovo con sugo al Cinghiale\n"+"\n"+
+        "-Lasagna\n" +
+        "Pasta all'uovo con carne macinata, uovo e mozzarella\n"+"\n"+
+        "-Gnocchi\n" +
+        "Pasta all'uovo con sugo al Ragu'\n"+"\n"+
+        "-Paccheri\n"+
+        "Pasta secca con Tartufo e Funghi Porcini\n"+"\n"+
+        "-Spaghetti\n"+
+        "Pasta secca con condimento alla Carbonara\n");
+
+
+
         System.out.println("APPLICAZIONE RISTORANTE\n");
         System.out.println("\u001B[34m " +
                 "\n" +
@@ -42,7 +42,7 @@ public class Main {
                 "- Amaro del capo\n" +
                 "- Jefferson\n" +
                 "- Numero uno");
->>>>>>> b24118091d18c993b4fba5ddda8e336c33a67f59
+
 
     }
 }
