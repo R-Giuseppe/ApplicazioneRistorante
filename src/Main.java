@@ -1,5 +1,7 @@
 public class Main {
+
     public static void main(String[] args) { 
+
         System.out.println("APPLICAZIONE RISTORANTE\n");
       
         System.out.println("\u001B[33m "+
@@ -17,6 +19,20 @@ public class Main {
             "Montanarine con burrata e salmone affumicato\n" + "\n"+
             "- Gamberi\n" +
             "Gamberi al miele e pan di spezie abbrustolito");
+  
+     System.out.println("\u001B[34m " + "### Primi Piatti:\n "+
+
+        "\n" +
+        "-Pappardelle\n"+
+        "Pasta all'uovo con sugo al Cinghiale\n"+"\n"+
+        "-Lasagna\n" +
+        "Pasta all'uovo con carne macinata, uovo e mozzarella\n"+"\n"+
+        "-Gnocchi\n" +
+        "Pasta all'uovo con sugo al Ragu'\n"+"\n"+
+        "-Paccheri\n"+
+        "Pasta secca con Tartufo e Funghi Porcini\n"+"\n"+
+        "-Spaghetti\n"+
+        "Pasta secca con condimento alla Carbonara\n");
    
          System.out.println("\033[35m "+
                 "### Secondi Piatti\n" +
@@ -68,5 +84,6 @@ public class Main {
                 "- Amaro del capo\n" +
                 "- Jefferson\n" +
                 "- Numero uno");
+
     }
 }
