@@ -73,7 +73,7 @@ public class SecondiPiatti {
         String cottura;
 
         if (tipoCottura) {
-            cottura = "Ben cotto";
+            cottura = "Ben cotto.";
         } else {
             cottura = "Al sangue";
         }
