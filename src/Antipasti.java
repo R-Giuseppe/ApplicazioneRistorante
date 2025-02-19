@@ -25,8 +25,8 @@ public class Antipasti extends Portate {
     // Funzione toString() specifica per la classe:
     @Override
     public String toString() {
-        return nome + ": " + descrizione + "\n" +
-                "\nIngredienti: " + elencoIngredienti() + ".\n" +
-                "\nPrezzo: " + prezzo + "€" + ".\n" + "Vegetariano: " + vegetariano;
+        return  nome + ": " + descrizione + ".\n" +
+                "Ingredienti: " + elencoIngredienti() + ".\n" +
+                "Prezzo: " + prezzo + " euro." + "\n" + "Vegetariano: " + vegetariano + "\n";
     }
 }
