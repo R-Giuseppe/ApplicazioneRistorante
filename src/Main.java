@@ -1,4 +1,5 @@
 public class Main {
+
     public static void main(String[] args) { 
 
         System.out.println("APPLICAZIONE RISTORANTE\n");
@@ -40,21 +41,41 @@ public class Main {
             System.out.println(secondiPiatti[i] + "\n");
         }
 
+        
+        Bevande[] bevandeAlcoliche = {
+                new Bevande("Vino rosso", "Vino rosso", 20.0, false),
+                new Bevande("Vino bianco", "Vino bianco", 30.0, true),
+                new Bevande("Vino rosato", "Vino rosato", 25.0, true),
+                new Bevande("Prosecco", "Prosecco di uva", 15.0, true),
+                new Bevande("Birra", "Birra", 6.0, true)
+        };
+        System.out.println("BEVANDE ALCOLICHE:");
+        for (Bevande bevanda : bevandeAlcoliche) {
+            System.out.println(bevanda);
+        }
 
+        Bevande[] bevandeAnalcoliche = {
+                new Bevande("Acqua naturale", "Acqua naturale", 3.0, true),
+                new Bevande("Acqua frizzante", "Acqua frizzante", 3.5, true),
+                new Bevande("Coca-Cola", "Coca-Cola", 4.0, true),
+                new Bevande("Fanta", "Fanta", 4.0, true),
+                new Bevande("Sprite", "Sprite", 4.0, true)
+        };
+        System.out.println("BEVANDE ANALCOLICHE:");
+        for (Bevande bevanda : bevandeAnalcoliche) {
+            System.out.println(bevanda);
+        }
+        Bevande[] caffeEAmari = {
+                new Bevande("Espresso", "Espresso", 0.5, false),
+                new Bevande("Macchiato", "Macchiato", 1.0, false),
+                new Bevande("Ginseng", "Ginseng", 1.5, false),
+                new Bevande("Amaro del capo", "Amaro calabrese", 6.0, true),
+                new Bevande("Jefferson", "Amaro calabrese", 6.0, true)
+        };
+        System.out.println("CAFFE' E AMARI:");
+        for (Bevande bevanda : caffeEAmari) {
+            System.out.println(bevanda);
+        }
     }
 }
 
-
- /*System.out.println("\033[35m " +
-                "### Secondi Piatti\n" +
-                "\n" +
-                "- Pollo alla cacciatora\n" +
-                "Pollo cotto in un sugo di pomodoro, cipolla, aglio, olive nere, capperi, vino rosso, rosmarino. \n" + "\n" +
-                "- Arrosto di vitello\n" +
-                "Vitello cotto con rosmarino, salvia, vino bianco e brodo.\n" + "\n" +
-                "- Spezzatino di manzo\n" +
-                "Manzo cotto in un sugo di pomodoro, cipolla, vino rosso, brodo, rosmarino e alloro.\n" + "\n" +
-                "- Scaloppine al limone\n" +
-                "Vitello in padella con burro, succo di limone, vino bianco e prezzemolo.\n" + "\n" +
-                "- Bistecca alla fiorentina\n" +
-                "Bistecca di manzo cotta sulla griglia, servita con olio d'oliva e pepe nero.\n"); */
