@@ -25,14 +25,14 @@ public class Main {
             System.out.println(elencoAntipasti[i]);
         }
       
-        System.out.println("\u001B[34m " + "### Primi Piatti:\n "+
+        System.out.println("\u001B[34m " + "### Primi Piatti:\n ");
 
         SecondiPiatti[] secondiPiatti =  {
-                new SecondiPiatti("Pollo alla cacciatora", "Pollo cotto in un sugo di pomodoro, cipolla, aglio, olive nere, capperi, vino rosso, rosmarino.", 15.00, new String[]{"pollo", "pomodoro", "cipolla", "aglio", "olive nere", "capperi", "vino rosso", "rosmarino"};, true),
-                new SecondiPiatti("Arrosto di vitello", "Vitello cotto con rosmarino, salvia, vino bianco e brodo.", 12.00, new String[]{"vitello", "salvia", "vino bianco", "brodo", "rosmarino"};, true),
-                new SecondiPiatti("Spezzatino di manzo", "Manzo cotto in un sugo di pomodoro, cipolla, vino rosso, brodo, rosmarino e alloro.", 18.00, new String[]{"manzo", "pomodoro", "cipolla", "vino rosso", "brodo", "rosmarino", "alloro"};, true),
-                new SecondiPiatti("Scaloppine al limone", "Vitello in padella con burro, succo di limone, vino bianco e prezzemolo.", 14.00, new String[]{"vitello", "burro", "succo di limone", "vino bianco", "prezzemolo"};, false),
-                new SecondiPiatti("Bistecca alla fiorentina", "Bistecca di manzo cotta sulla griglia, servita con olio d'oliva e pepe nero.", 22.00, new String[]{"manzo", "olio d'oliva", "pepe nero"};, false)
+                new SecondiPiatti("Pollo alla cacciatora", "Pollo cotto in un sugo di pomodoro, cipolla, aglio, olive nere, capperi, vino rosso, rosmarino.", 15.00, new String[]{"pollo", "pomodoro", "cipolla", "aglio", "olive nere", "capperi", "vino rosso", "rosmarino"}, true),
+                new SecondiPiatti("Arrosto di vitello", "Vitello cotto con rosmarino, salvia, vino bianco e brodo.", 12.00, new String[]{"vitello", "salvia", "vino bianco", "brodo", "rosmarino"}, true),
+                new SecondiPiatti("Spezzatino di manzo", "Manzo cotto in un sugo di pomodoro, cipolla, vino rosso, brodo, rosmarino e alloro.", 18.00, new String[]{"manzo", "pomodoro", "cipolla", "vino rosso", "brodo", "rosmarino", "alloro"}, true),
+                new SecondiPiatti("Scaloppine al limone", "Vitello in padella con burro, succo di limone, vino bianco e prezzemolo.", 14.00, new String[]{"vitello", "burro", "succo di limone", "vino bianco", "prezzemolo"}, false),
+                new SecondiPiatti("Bistecca alla fiorentina", "Bistecca di manzo cotta sulla griglia, servita con olio d'oliva e pepe nero.", 22.00, new String[]{"manzo", "olio d'oliva", "pepe nero"}, false)
         };
 
         System.out.println("SECONDI PIATTI:\n");
