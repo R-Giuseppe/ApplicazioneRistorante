@@ -14,6 +14,7 @@ public class SecondiPiatti extends Portate {
     public boolean isTipoCottura() {
         return tipoCottura;
     }
+
     public void setTipoCottura(boolean tipoCottura) {
         this.tipoCottura = tipoCottura;
     }
@@ -40,9 +41,9 @@ public class SecondiPiatti extends Portate {
             cottura = "Al sangue";
         }
 
-        return nome + ": " + descrizione + "\n" +
-                "\nIngredienti: " + elencoIngredienti() + ".\n" +
-                "\nPrezzo: " + prezzo + "€\n" +
+        return nome + ": " + descrizione +
+                "\nIngredienti: " + elencoIngredienti() +
+                "\nPrezzo: " + prezzo + " euro" +
                 "\nTipo di cottura: " + cottura;
     }
 }
