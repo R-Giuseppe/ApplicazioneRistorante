@@ -44,6 +44,6 @@ public class SecondiPiatti extends Portate {
         return nome + ": " + descrizione +
                 "\nIngredienti: " + elencoIngredienti() +
                 "\nPrezzo: " + prezzo + " euro" +
-                "\nTipo di cottura: " + cottura;
+                "\nTipo di cottura: " + cottura + "\n";
     }
 }
