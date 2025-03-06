@@ -2,9 +2,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //System.out.println("APPLICAZIONE RISTORANTE\n");
+        System.out.println("APPLICAZIONE RISTORANTE\n");
      
-        Antipasti[] elencoAntipasti = {
+        /*Antipasti[] elencoAntipasti = {
             // Crostini:
             new Antipasti("Crostini", "Crostini con senape, prosciutto cotto e formaggio", 3, new String[]{"prosciutto cotto", "parmigiano reggiano dop", "fetta di pane", "uova", "senape rustica", "birra trappista triple ale", "amido di mais", "olio extravergine di oliva"}, false),
             // Quesadilla:
@@ -75,16 +75,11 @@ public class Main {
         //System.out.println("CAFFE' E AMARI:");
         for (Bevande bevanda : caffeEAmari) {
             //System.out.println(bevanda);
-        }
+        }*/
 
         Menu menu = new Menu();
-        menu.aggiungiPortate(elencoAntipasti[0]);
-        menu.aggiungiPortate(elencoAntipasti[1]);
-        menu.aggiungiPortate(elencoAntipasti[2]);
-        menu.aggiungiPortate(elencoAntipasti[3]);
-        menu.aggiungiPortate(elencoAntipasti[4]);
-        menu.aggiungiPortate(elencoAntipasti[5]);
-        menu.aggiungiPortate(secondiPiatti[0]);
+
+        /*menu.aggiungiPortate(secondiPiatti[0]);
         menu.aggiungiPortate(secondiPiatti[1]);
         menu.aggiungiPortate(secondiPiatti[2]);
         menu.aggiungiPortate(secondiPiatti[3]);
@@ -104,7 +99,16 @@ public class Main {
         menu.aggiungiPortate(caffeEAmari[2]);
         menu.aggiungiPortate(caffeEAmari[3]);
         menu.aggiungiPortate(caffeEAmari[4]);
+        menu.aggiungiPortate(elencoAntipasti[0]);
+        menu.aggiungiPortate(elencoAntipasti[1]);
+        menu.aggiungiPortate(elencoAntipasti[2]);
+        menu.aggiungiPortate(elencoAntipasti[3]);
+        menu.aggiungiPortate(elencoAntipasti[4]);
+        menu.aggiungiPortate(elencoAntipasti[5]);*/
 
+
+        //menu.scriviMenuJson();
+        menu.leggiJsonMenu("res/portate.json");
         menu.stampaMenu();
     }
 }

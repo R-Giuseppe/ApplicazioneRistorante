@@ -2,12 +2,14 @@ public abstract class Portate {
     protected String nome, descrizione;
     protected double prezzo;
     protected String[] ingredienti;
+    //protected String tipo;
 
     public Portate(String nome, String descrizione, double prezzo, String[] ingredienti) {
         this.nome = nome;
         this.descrizione = descrizione;
         this.prezzo = prezzo;
         this.ingredienti = ingredienti;
+        //this.tipo = this.getClass().getSimpleName();
     }
 
     public String getNome() {
