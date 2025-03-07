@@ -1,0 +1,273 @@
+[
+  {
+    "tipologia": "antipasto",
+    "vegetariano": false,
+    "nome": "Crostini",
+    "descrizione": "Crostini con senape, prosciutto cotto e formaggio",
+    "prezzo": 3.0,
+    "ingredienti": [
+      "prosciutto cotto",
+      "parmigiano reggiano dop",
+      "fetta di pane",
+      "uova",
+      "senape rustica",
+      "birra trappista triple ale",
+      "amido di mais",
+      "olio extravergine di oliva"
+    ]
+  },
+  {
+    "vegetariano": true,
+    "nome": "Quesadilla",
+    "descrizione": "Quesadilla all\u0027italiana con Asiago",
+    "prezzo": 5.0,
+    "ingredienti": [
+      "asiago dop",
+      "farina messicana di mais bianco precotto",
+      "avocado",
+      "tabasco",
+      "olio extravergine di oliva",
+      "sale"
+    ]
+  },
+  {
+    "vegetariano": true,
+    "nome": "Omeletta",
+    "descrizione": "Omeletta di patate, Trentino-Alto Adige",
+    "prezzo": 8.0,
+    "ingredienti": [
+      "patate",
+      "uova",
+      "farina",
+      "olio di arachide",
+      "sale"
+    ]
+  },
+  {
+    "vegetariano": false,
+    "nome": "Canederli",
+    "descrizione": "Mini canederli con sugo alla puttanesca",
+    "prezzo": 10.0,
+    "ingredienti": [
+      "pane multicereali",
+      "latte",
+      "uova",
+      "prezzemolo",
+      "maggiorana",
+      "erba cipollina",
+      "olio di arachide",
+      "sale",
+      "pepe"
+    ]
+  },
+  {
+    "vegetariano": false,
+    "nome": "Montanarine",
+    "descrizione": "Montanarine con burrata e salmone affumicato",
+    "prezzo": 15.0,
+    "ingredienti": [
+      "Farina 0",
+      "latte intero",
+      "olio extravergine d\u0027oliva",
+      "lievito di birra",
+      "sale fino",
+      "burrata",
+      "salmone affumicato",
+      "prezzemolo",
+      "pepe rosa in grani"
+    ]
+  },
+  {
+    "vegetariano": false,
+    "nome": "Gamberi",
+    "descrizione": "Gamberi al miele e pan di spezie abbrustolito",
+    "prezzo": 20.0,
+    "ingredienti": [
+      "code di gambero",
+      "pan di spezie",
+      "scalogno",
+      "lime",
+      "zenzero",
+      "peperoncino",
+      "semi di sesamo bianco",
+      "vino bianco secco",
+      "miele di acacia",
+      "olio extravergine di oliva",
+      "misticanza",
+      "sale"
+    ]
+  },
+  {
+    "tipoCottura": true,
+    "nome": "Pollo alla cacciatora",
+    "descrizione": "Pollo cotto in un sugo di pomodoro, cipolla, aglio, olive nere, capperi, vino rosso, rosmarino.",
+    "prezzo": 15.0,
+    "ingredienti": [
+      "pollo",
+      "pomodoro",
+      "cipolla",
+      "aglio",
+      "olive nere",
+      "capperi",
+      "vino rosso",
+      "rosmarino"
+    ]
+  },
+  {
+    "tipoCottura": true,
+    "nome": "Arrosto di vitello",
+    "descrizione": "Vitello cotto con rosmarino, salvia, vino bianco e brodo.",
+    "prezzo": 12.0,
+    "ingredienti": [
+      "vitello",
+      "salvia",
+      "vino bianco",
+      "brodo",
+      "rosmarino"
+    ]
+  },
+  {
+    "tipoCottura": true,
+    "nome": "Spezzatino di manzo",
+    "descrizione": "Manzo cotto in un sugo di pomodoro, cipolla, vino rosso, brodo, rosmarino e alloro.",
+    "prezzo": 18.0,
+    "ingredienti": [
+      "manzo",
+      "pomodoro",
+      "cipolla",
+      "vino rosso",
+      "brodo",
+      "rosmarino",
+      "alloro"
+    ]
+  },
+  {
+    "tipoCottura": false,
+    "nome": "Scaloppine al limone",
+    "descrizione": "Vitello in padella con burro, succo di limone, vino bianco e prezzemolo.",
+    "prezzo": 14.0,
+    "ingredienti": [
+      "vitello",
+      "burro",
+      "succo di limone",
+      "vino bianco",
+      "prezzemolo"
+    ]
+  },
+  {
+    "tipoCottura": false,
+    "nome": "Bistecca alla fiorentina",
+    "descrizione": "Bistecca di manzo cotta sulla griglia, servita con olio d\u0027oliva e pepe nero.",
+    "prezzo": 22.0,
+    "ingredienti": [
+      "manzo",
+      "olio d\u0027oliva",
+      "pepe nero"
+    ]
+  },
+  {
+    "temperatura": false,
+    "nome": "Vino rosso",
+    "descrizione": "Vino rosso",
+    "prezzo": 20.0,
+    "ingredienti": []
+  },
+  {
+    "temperatura": true,
+    "nome": "Vino bianco",
+    "descrizione": "Vino bianco",
+    "prezzo": 30.0,
+    "ingredienti": []
+  },
+  {
+    "temperatura": true,
+    "nome": "Vino rosato",
+    "descrizione": "Vino rosato",
+    "prezzo": 25.0,
+    "ingredienti": []
+  },
+  {
+    "temperatura": true,
+    "nome": "Prosecco",
+    "descrizione": "Prosecco di uva",
+    "prezzo": 15.0,
+    "ingredienti": []
+  },
+  {
+    "temperatura": true,
+    "nome": "Birra",
+    "descrizione": "Birra",
+    "prezzo": 6.0,
+    "ingredienti": []
+  },
+  {
+    "temperatura": true,
+    "nome": "Acqua naturale",
+    "descrizione": "Acqua naturale",
+    "prezzo": 3.0,
+    "ingredienti": []
+  },
+  {
+    "temperatura": true,
+    "nome": "Acqua frizzante",
+    "descrizione": "Acqua frizzante",
+    "prezzo": 3.5,
+    "ingredienti": []
+  },
+  {
+    "temperatura": true,
+    "nome": "Coca-Cola",
+    "descrizione": "Coca-Cola",
+    "prezzo": 4.0,
+    "ingredienti": []
+  },
+  {
+    "temperatura": true,
+    "nome": "Fanta",
+    "descrizione": "Fanta",
+    "prezzo": 4.0,
+    "ingredienti": []
+  },
+  {
+    "temperatura": true,
+    "nome": "Sprite",
+    "descrizione": "Sprite",
+    "prezzo": 4.0,
+    "ingredienti": []
+  },
+  {
+    "temperatura": false,
+    "nome": "Espresso",
+    "descrizione": "Espresso",
+    "prezzo": 0.5,
+    "ingredienti": []
+  },
+  {
+    "temperatura": false,
+    "nome": "Macchiato",
+    "descrizione": "Macchiato",
+    "prezzo": 1.0,
+    "ingredienti": []
+  },
+  {
+    "temperatura": false,
+    "nome": "Ginseng",
+    "descrizione": "Ginseng",
+    "prezzo": 1.5,
+    "ingredienti": []
+  },
+  {
+    "temperatura": true,
+    "nome": "Amaro del capo",
+    "descrizione": "Amaro calabrese",
+    "prezzo": 6.0,
+    "ingredienti": []
+  },
+  {
+    "temperatura": true,
+    "nome": "Jefferson",
+    "descrizione": "Amaro calabrese",
+    "prezzo": 6.0,
+    "ingredienti": []
+  }
+]
