@@ -1,48 +1,44 @@
-public class PrimiPiatti {
-    private String Nome;
-    private String Descrizione;
-    private double Prezzo;
-    boolean Glutine;
+public class PrimiPiatti extends Portate {
 
-    public PrimiPiatti(String nome, String descrizione, double prezzo, boolean glutine){
+    // Attributo specifico:
+    private boolean glutine; // true = con glutine; false = senza glutine
 
-        this.Nome = Nome;
-        this.Descrizione = descrizione;
-        this.Prezzo = prezzo;
-        this.Glutine = glutine;
-
-    }
-    // Setter and Getter
-    public String getNome() {
-        return Nome;
+    // Costruttore
+    public PrimiPiatti(String nome, String descrizione, double prezzo, String[] ingredienti, boolean glutine){
+        super(nome, descrizione, prezzo, ingredienti);
+        this.glutine = glutine;
+        this.tipologia = "primo_piatto";
     }
 
-    public void setNome(String nome) {
-        this.Nome = nome;
+    // Getter e Setter
+    public boolean getGlutine() {
+        return glutine;
     }
 
-    public String getDescrizione() {
-        return Descrizione;
+    public void setGlutine(boolean glutine) {
+        this.glutine = glutine;
     }
 
-    public void setDescrizione(String descrizione) {
-        this.Descrizione = descrizione;
+    public String getTipologia() {
+        return tipologia;
     }
 
-    public double getPrezzo() {
-        return Prezzo;
+    public void setTipologia(String tipologia) {
+        this.tipologia = tipologia;
     }
 
-    public void setPrezzo(double prezzo) {
-        this.Prezzo = prezzo;
-    }
-
+    // Funzione toString() specifica per la classe:
     @Override
     public String toString() {
-        return "Il Piatto " +
-                " " + Nome + '\'' +
-                "con" + Descrizione + '\'' +
-                ", al costo di € " + Prezzo +
-                "Presenza Glutine -  " + Glutine ;
+        // Variabile per il glutine
+        String conGlutine;
+
+        if (glutine) {
+            conGlutine = "con glutine";
+        } else {
+            conGlutine = "senza glutine";
+        }
+
+        return super.toString() + "Glutine: " + conGlutine + "\n";
     }
 }

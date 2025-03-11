@@ -1,65 +1,44 @@
-public class Dessert {
-    // Attributi
-    private String nome, descrizione;
-    private double prezzo;
-    private String[] ingredienti;
+public class Dessert extends Portate {
+
+    // Attributo specifico:
+    private boolean lattosio; // true = con lattosio; false = senza lattosio
 
     // Costruttore
-    public Dessert(String nome, String descrizione, double prezzo, String[] ingredienti) {
-        this.nome = nome;
-        this.descrizione = descrizione;
-        this.prezzo = prezzo;
-        this.ingredienti = ingredienti;
+    public Dessert(String nome, String descrizione, double prezzo, String[] ingredienti, boolean lattosio) {
+        super(nome, descrizione, prezzo, ingredienti);
+        this.lattosio = lattosio;
+        this.tipologia = "dessert";
     }
 
-    // Setter and Getter
-    public String getNome() {
-        return nome;
+    // Getter e Setter
+    public boolean getLattosio() {
+        return lattosio;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setLattosio(boolean lattosio) {
+        this.lattosio = lattosio;
     }
 
-    public String getDescrizione() {
-        return descrizione;
+    public String getTipologia() {
+        return tipologia;
     }
 
-    public void setDescrizione(String descrizione) {
-        this.descrizione = descrizione;
+    public void setTipologia(String tipologia) {
+        this.tipologia = tipologia;
     }
 
-    public double getPrezzo() {
-        return prezzo;
-    }
-
-    public void setPrezzo(double prezzo) {
-        this.prezzo = prezzo;
-    }
-
-    public String[] getIngredienti() {
-        return ingredienti;
-    }
-
-    public void setIngredienti(String[] ingredienti) {
-        this.ingredienti = ingredienti;
-    }
-
-    //Funzione che restituisce una stringa contenente l'elenco degli ingredienti dell'istanza
-    private String elencoIngredienti() {
-        String list = "";
-        for (int i = 0; i < ingredienti.length - 1; i++) {
-            list += ingredienti[i] + ", ";
-        }
-        list += ingredienti[ingredienti.length - 1];
-        return list;
-    }
-
-    // Metodo toString
+    // Funzione toString() specifica per la classe:
     @Override
     public String toString() {
-        return nome + ": " + descrizione + "\n" +
-                "\nIngredienti: " + elencoIngredienti() + ".\n" +
-                "\nPrezzo: " + prezzo + "€";
+        // Variabile per il lattosio
+        String conLattosio;
+
+        if (lattosio) {
+            conLattosio = "con lattosio";
+        } else {
+            conLattosio = "senza lattosio";
+        }
+
+        return super.toString() + "Lattosio: " + conLattosio + "\n";
     }
 }

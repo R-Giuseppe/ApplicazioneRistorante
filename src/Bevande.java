@@ -1,17 +1,19 @@
-public class Bevande extends Portate {
-    // Attributi
+import java.util.Arrays;
 
+public class Bevande extends Portate {
+
+    // Attributo specifico:
     private boolean temperatura; // true = freddo; false = caldo
 
     // Costruttore
-    public Bevande(String nome, String descrizione, double prezzo, boolean temperatura) {
-        super(nome, descrizione, prezzo, new String[0]);
+    public Bevande(String nome, String descrizione, double prezzo,  boolean temperatura) {
+        super(nome, descrizione, prezzo, null);
         this.temperatura = temperatura;
+        this.tipologia = "bevanda";
     }
 
-
-    // Setter and Getter
-    public boolean isTemperatura() {
+    // Getter e Setter
+    public boolean getTemperatura() {
         return temperatura;
     }
 
@@ -19,20 +21,27 @@ public class Bevande extends Portate {
         this.temperatura = temperatura;
     }
 
+    public String getTipologia() {
+        return tipologia;
+    }
 
+    public void setTipologia(String tipologia) {
+        this.tipologia = tipologia;
+    }
+
+    // Funzione toString() specifica per la classe:
     @Override
     public String toString() {
         // Variabile della temperatura
         String temp;
 
         if (temperatura) {
-            temp = "Freddo";
+            temp = "fredda";
         } else {
-            temp = "Caldo";
+            temp = "calda";
         }
 
-        return nome + ": " + descrizione +
-                "\nPrezzo: " + prezzo + " euro" +
-                "\nTemperatura: " + temp + "\n";
+        return "Tipologia: " + tipologia + "\nNome: " + nome + "\nDescrizione: " + descrizione +
+                "\nPrezzo: " + prezzo + " euro" + "\nTemperatura: " + temp + "\n";
     }
 }
