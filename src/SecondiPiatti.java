@@ -1,17 +1,17 @@
 public class SecondiPiatti extends Portate {
 
-    // Attributi
+    // Attributo specifico:
     private boolean tipoCottura; // true = ben cotto; false = al sangue
 
     // Costruttore
     public SecondiPiatti(String nome, String descrizione, double prezzo, String[] ingredienti, boolean tipoCottura) {
         super(nome, descrizione, prezzo, ingredienti);
         this.tipoCottura = tipoCottura;
+        this.tipologia = "secondo_piatto";
     }
 
-
-    // Setter and Getter
-    public boolean isTipoCottura() {
+    // Getter e Setter
+    public boolean getTipoCottura() {
         return tipoCottura;
     }
 
@@ -19,31 +19,27 @@ public class SecondiPiatti extends Portate {
         this.tipoCottura = tipoCottura;
     }
 
-
-    //Funzione che restituisce una stringa contenente l'elenco degli ingredienti dell'istanza
-    public String elencoIngredienti() {
-        String list = "";
-        for (int i = 0; i < ingredienti.length - 1; i++) {
-            list += ingredienti[i] + ", ";
-        }
-        list += ingredienti[ingredienti.length - 1];
-        return list;
+    public String getTipologia() {
+        return tipologia;
     }
 
+    public void setTipologia(String tipologia) {
+        this.tipologia = tipologia;
+    }
+
+    // Funzione toString() specifica per la classe:
     @Override
     public String toString() {
         // Variabile per il tipo di cottura
         String cottura;
 
         if (tipoCottura) {
-            cottura = "Ben cotto.";
+            cottura = "ben cotto";
         } else {
-            cottura = "Al sangue";
+            cottura = "al sangue";
         }
 
-        return nome + ": " + descrizione +
-                "\nIngredienti: " + elencoIngredienti() +
-                "\nPrezzo: " + prezzo + " euro" +
-                "\nTipo di cottura: " + cottura + "\n";
+        return super.toString() + "Cottura: " + cottura + "\n";
+
     }
 }

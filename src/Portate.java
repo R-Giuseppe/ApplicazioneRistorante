@@ -9,7 +9,6 @@ public abstract class Portate {
         this.descrizione = descrizione;
         this.prezzo = prezzo;
         this.ingredienti = ingredienti;
-        //this.tipo = this.getClass().getSimpleName();
     }
 
     public String getNome() {
@@ -54,8 +53,8 @@ public abstract class Portate {
     }
 
     public String toString() {
-        return nome + ": " + descrizione + "\n" +
-                "\nIngredienti: " + ingredienti + ".\n" +
-                "\nPrezzo: " + prezzo + "€";
+        return "Tipologia: " + tipologia + "\nNome: " + nome + "\nDescrizione: " + descrizione +
+                "\nIngredienti: " + elencoIngredienti() +
+                "\nPrezzo: " + prezzo + " euro" + "\n";
     }
 }

@@ -45,12 +45,14 @@ public class Menu {
             }
 
             private int getOrdine(Portate portata) {
-                if (portata instanceof Antipasti) return 1;
-                // if (portata instanceof PrimiPiatti) return 2;
-                if (portata instanceof SecondiPiatti) return 3;
-                if (portata instanceof Bevande) return 4;
-                // if (portata instanceof Dessert) return 5;
-                return 6;
+                return switch (portata.tipologia) {
+                    case "antipasto" -> 1;
+                    case "primo_piatto" -> 2;
+                    case "secondo_piatto" -> 3;
+                    case "dessert" -> 4;
+                    case "bevanda" -> 5;
+                    default -> 6;
+                };
             }
         });
     }
@@ -78,37 +80,37 @@ public class Menu {
             JsonArray jsonArray = JsonParser.parseReader(reader).getAsJsonArray();
             for (JsonElement element : jsonArray) {
                 JsonObject jsonObject = element.getAsJsonObject();
-                if (jsonObject.has("vegetariano")) {
-                    // È un Antipasto
-                    Antipasti antipasto = gson.fromJson(jsonObject, Antipasti.class);
-                    portate.add(antipasto);
-                } else if (jsonObject.has("tipoCottura")) {
-                    // È un SecondoPiatti
-                    SecondiPiatti secondoPiatto = gson.fromJson(jsonObject, SecondiPiatti.class);
-                    portate.add(secondoPiatto);
-                } else if (jsonObject.has("temperatura")) {
-                    // È una Bevanda
-                    Bevande bevanda = gson.fromJson(jsonObject, Bevande.class);
-                    portate.add(bevanda);
+                if (jsonObject.has("tipologia")) {
+                    String tipologia = jsonObject.get("tipologia").getAsString();
+                    switch (tipologia) {
+                        case "antipasto":
+                            Antipasti antipasto = gson.fromJson(jsonObject, Antipasti.class);
+                            portate.add(antipasto);
+                            break;
+                        case "primo_piatto":
+                            PrimiPiatti primoPiatto = gson.fromJson(jsonObject, PrimiPiatti.class);
+                            portate.add(primoPiatto);
+                            break;
+                        case "secondo_piatto":
+                            SecondiPiatti secondoPiatto = gson.fromJson(jsonObject, SecondiPiatti.class);
+                            portate.add(secondoPiatto);
+                            break;
+                        case "bevanda":
+                            Bevande bevanda = gson.fromJson(jsonObject, Bevande.class);
+                            portate.add(bevanda);
+                            break;
+                        case "dessert":
+                            Dessert dessert = gson.fromJson(jsonObject, Dessert.class);
+                            portate.add(dessert);
+                            break;
+                        default:
+                            System.out.println("Tipologia non riconosciuta: " + tipologia);
+                            break;
+                    }
                 }
-                // Potresti aggiungere un else per gestire altri tipi di portate
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
-    /*public void leggiMenuJson() {
-        Gson gson = new Gson();
-        // Read JSON from a file
-        try (Reader reader = new FileReader("src/portate.json")) {
-
-            // convert the JSON data to a Java object
-            Portate portata = gson.fromJson(reader, Portate.class);
-            System.out.println(portata);
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }*/
 }
