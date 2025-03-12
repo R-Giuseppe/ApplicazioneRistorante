@@ -2,7 +2,7 @@ public abstract class Portate {
     protected String nome, descrizione;
     protected double prezzo;
     protected String[] ingredienti;
-    //protected String tipo;
+    protected String tipologia;
 
     public Portate(String nome, String descrizione, double prezzo, String[] ingredienti) {
         this.nome = nome;
