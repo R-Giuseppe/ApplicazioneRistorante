@@ -9,6 +9,7 @@ public abstract class Portate {
         this.descrizione = descrizione;
         this.prezzo = prezzo;
         this.ingredienti = ingredienti;
+        //this.tipo = this.getClass().getSimpleName();
     }
 
     public String getNome() {
