@@ -40,5 +40,6 @@ public class SecondiPiatti extends Portate {
         }
 
         return super.toString() + "Cottura: " + cottura + "\n";
+
     }
 }
