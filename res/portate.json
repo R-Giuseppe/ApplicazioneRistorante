@@ -82,6 +82,18 @@
     "tipologia": "antipasto"
   },
   {
+    "vegetariano": true,
+    "nome": "salumiNuovi",
+    "descrizione": "tagliereNuovo",
+    "prezzo": 10.0,
+    "ingredienti": [
+      "salame",
+      " prosciutto",
+      " formaggio"
+    ],
+    "tipologia": "antipasto"
+  },
+  {
     "glutine": true,
     "nome": "spaghetti alla carbonara",
     "descrizione": "spaghetti con uova, guanciale, pecorino romano e pepe nero",

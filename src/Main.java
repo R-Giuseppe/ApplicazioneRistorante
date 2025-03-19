@@ -1,12 +1,11 @@
 public class Main {
 
     public static void main(String[] args) {
+        // Creo una nuova istanza della classe Menu:
         Menu menu = new Menu();
 
-        System.out.println("MENU DEL RISTORANTE\n");
-
-        menu.leggiJsonMenu("res/portate.json");
-        menu.stampaMenu();
+        // Richiamo la funzione menuInterattivo() della classe Menu:
+        menu.menuInterattivo();
     }
 }
 
