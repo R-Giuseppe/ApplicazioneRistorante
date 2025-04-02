@@ -4,8 +4,14 @@ public class Main {
         // Creo una nuova istanza della classe Menu:
         Menu menu = new Menu();
 
-        // Richiamo la funzione menuInterattivo() della classe Menu:
-        menu.menuInterattivo();
+        // Creo una nuova istanza della classe MenuInputHandler:
+        InputHandler menuInputHandler = new InputHandler();
+
+        // Creo una nuova istanza della classe MenuConsoleHandler:
+        MenuConsoleHandler menuConsoleHandler = new MenuConsoleHandler(menu, menuInputHandler);
+
+        // Richiamo la funzione menuInterattivo() della classe MenuConsoleHandler:
+        menuConsoleHandler.menuInterattivo();
     }
 }
 
