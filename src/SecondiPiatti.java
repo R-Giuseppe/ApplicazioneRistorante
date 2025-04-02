@@ -19,10 +19,6 @@ public class SecondiPiatti extends Portate {
         this.tipoCottura = tipoCottura;
     }
 
-    public String getTipologia() {
-        return tipologia;
-    }
-
     public void setTipologia(String tipologia) {
         this.tipologia = tipologia;
     }
@@ -34,12 +30,12 @@ public class SecondiPiatti extends Portate {
         String cottura;
 
         if (tipoCottura) {
-            cottura = "ben cotto";
+            cottura = "\u001B[33m" + "ben cotto" + "\u001B[0m";
         } else {
-            cottura = "al sangue";
+            cottura = "\u001B[33m" + "al sangue" + "\u001B[0m";
         }
 
-        return super.toString() + "Cottura: " + cottura + "\n";
+        return super.toString() +  "\u001B[33m" + "Cottura: " + "\u001B[0m" + cottura + "\n";
 
     }
 }
