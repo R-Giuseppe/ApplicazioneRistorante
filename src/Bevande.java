@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Bevande extends Portate {
 
     // Attributo specifico:
@@ -19,6 +21,10 @@ public class Bevande extends Portate {
         this.temperatura = temperatura;
     }
 
+    public String getTipologia() {
+        return tipologia;
+    }
+
     public void setTipologia(String tipologia) {
         this.tipologia = tipologia;
     }
@@ -30,12 +36,12 @@ public class Bevande extends Portate {
         String temp;
 
         if (temperatura) {
-            temp = "\u001B[33m" + "fredda" + "\u001B[0m";
+            temp = "fredda";
         } else {
-            temp = "\u001B[33m" + "calda" + "\u001B[0m";
+            temp = "calda";
         }
 
-        return "\u001B[33m" + "Tipologia: " + tipologia + "\nNome: " + nome + "\nDescrizione: " + descrizione +
-                "\nPrezzo: " + prezzo + " euro" + "\nTemperatura: " + temp + "\n" + "\u001B[0m";
+        return "Tipologia: " + tipologia + "\nNome: " + nome + "\nDescrizione: " + descrizione +
+                "\nPrezzo: " + prezzo + " euro" + "\nTemperatura: " + temp + "\n";
     }
 }
