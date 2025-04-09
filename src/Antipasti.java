@@ -19,6 +19,10 @@ public class Antipasti extends Portate {
         this.vegetariano = vegetariano;
     }
 
+    public String getTipologia() {
+        return tipologia;
+    }
+
     public void setTipologia(String tipologia) {
         this.tipologia = tipologia;
     }
@@ -30,11 +34,11 @@ public class Antipasti extends Portate {
         String eVegetariano;
 
         if (vegetariano) {
-            eVegetariano = "\u001B[33m" + "sì" + "\u001B[0m";
+            eVegetariano = "sì";
         } else {
-            eVegetariano = "\u001B[33m" + "no" + "\u001B[0m";
+            eVegetariano = "no";
         }
 
-        return super.toString() +  "\u001B[33m" + "Vegetariano: " + "\u001B[0m" + eVegetariano + "\n";
+        return super.toString() + "Vegetariano: " + eVegetariano + "\n";
     }
 }

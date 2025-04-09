@@ -19,6 +19,10 @@ public class Dessert extends Portate {
         this.lattosio = lattosio;
     }
 
+    public String getTipologia() {
+        return tipologia;
+    }
+
     public void setTipologia(String tipologia) {
         this.tipologia = tipologia;
     }
@@ -30,11 +34,11 @@ public class Dessert extends Portate {
         String conLattosio;
 
         if (lattosio) {
-            conLattosio = "\u001B[33m" + "con lattosio" + "\u001B[0m";
+            conLattosio = "con lattosio";
         } else {
-            conLattosio = "\u001B[33m" + "senza lattosio" + "\u001B[0m";
+            conLattosio = "senza lattosio";
         }
 
-        return super.toString() +  "\u001B[33m" + "Lattosio: " + "\u001B[0m" + conLattosio + "\n";
+        return super.toString() + "Lattosio: " + conLattosio + "\n";
     }
 }

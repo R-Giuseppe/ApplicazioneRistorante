@@ -19,6 +19,10 @@ public class PrimiPiatti extends Portate {
         this.glutine = glutine;
     }
 
+    public String getTipologia() {
+        return tipologia;
+    }
+
     public void setTipologia(String tipologia) {
         this.tipologia = tipologia;
     }
@@ -30,11 +34,11 @@ public class PrimiPiatti extends Portate {
         String conGlutine;
 
         if (glutine) {
-            conGlutine = "\u001B[33m" + "con glutine" + "\u001B[0m";
+            conGlutine = "con glutine";
         } else {
-            conGlutine = "\u001B[33m" + "senza glutine" + "\u001B[0m";
+            conGlutine = "senza glutine";
         }
 
-        return super.toString() +  "\u001B[33m" + "Glutine: " + "\u001B[0m" + conGlutine + "\n";
+        return super.toString() + "Glutine: " + conGlutine + "\n";
     }
 }

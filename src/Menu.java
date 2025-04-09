@@ -1,30 +1,33 @@
 import java.io.*;
-
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 import com.google.gson.*;
+import com.google.gson.reflect.TypeToken;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+import javax.sound.sampled.Port;
 
 public class Menu {
-
-    private final ArrayList<Portate> portate;
+    private ArrayList<Portate> portate;
 
     public Menu() {
         this.portate = new ArrayList<>();
     }
 
-    // Funzione per aggiungere una portata al menu:
     public void aggiungiPortate(Portate portata) {
         portate.add(portata);
     }
 
-    // Funzione per rimuovere una portata dal menu:
     public void rimuoviPortate(Portate portata) {
         portate.remove(portata);
     }
 
-    // Funzione per modificare una portata del menu:
     public void modificaPortata(Portate vecchiaPortata, Portate nuovaPortata) {
         int index = portate.indexOf(vecchiaPortata);
         if (index != -1) {
@@ -32,8 +35,7 @@ public class Menu {
         }
     }
 
-    // Funzione per ordinare le portate del menu in base alla tipologia:
-    public void ordinamentoPortate() {
+    private void ordinamentoPortate() {
         Collections.sort(this.portate, new Comparator<Portate>() {
             @Override
             public int compare(Portate p1, Portate p2) {
@@ -55,7 +57,6 @@ public class Menu {
         });
     }
 
-    // Funzione per la stampa del menu:
     public void stampaMenu() {
         ordinamentoPortate();
         for (Object piatto : portate) {
@@ -63,44 +64,16 @@ public class Menu {
         }
     }
 
-    // Funzione per la stampa del menu in base alla tipologia della portata:
-    public void stampaMenuPerTipo(String tipologia) {
-        int contatore = 0;
-        ordinamentoPortate();
-        System.out.println("\nMenu aggiornato per la tipologia " + tipologia + ": \n");
-        for (Portate portata : portate) {
-            if (portata.getTipologia().equals(tipologia)) {
-                System.out.println(portata);
-                contatore++;
-            }
-        }
-        if (contatore == 0) {
-            System.out.println("Non sono state trovate portate della tipologia " + tipologia + " all'interno del menu");
-        }
-    }
-
-    // Funzione per ottenere una portata in base al nome:
-    public Portate getPortataPerNome(String nome) {
-        for (Portate portata : portate) {
-            if (portata.getNome().equals(nome)) {
-                return portata;
-            }
-        }
-        return null;
-    }
-
-    // Funzione per salvare il menu su file:
     public void scriviMenuJson() {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         ordinamentoPortate();
         try (Writer writer = new FileWriter("res/portate.json")) {
-            gson.toJson(portate, writer);
+            gson.toJson(portate, writer); // Scrive l'intera lista come un array JSON
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    // Funzione per caricare il menu da file:
     public void leggiJsonMenu(String filePath) {
         Gson gson = new Gson();
         try (FileReader reader = new FileReader(filePath)) {
