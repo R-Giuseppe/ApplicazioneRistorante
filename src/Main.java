@@ -1,12 +1,17 @@
 public class Main {
 
     public static void main(String[] args) {
+        // Creo una nuova istanza della classe Menu:
         Menu menu = new Menu();
 
-        System.out.println("MENU DEL RISTORANTE\n");
+        // Creo una nuova istanza della classe MenuInputHandler:
+        InputHandler menuInputHandler = new InputHandler();
 
-        menu.leggiJsonMenu("res/portate.json");
-        menu.stampaMenu();
+        // Creo una nuova istanza della classe MenuConsoleHandler:
+        MenuConsoleHandler menuConsoleHandler = new MenuConsoleHandler(menu, menuInputHandler);
+
+        // Richiamo la funzione menuInterattivo() della classe MenuConsoleHandler:
+        menuConsoleHandler.menuInterattivo();
     }
 }
 

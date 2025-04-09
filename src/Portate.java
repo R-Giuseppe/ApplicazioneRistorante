@@ -43,6 +43,10 @@ public abstract class Portate {
         this.ingredienti = ingredienti;
     }
 
+    public String getTipologia() {
+        return tipologia;
+    }
+
     public String elencoIngredienti() {
         String list = "";
         for (int i = 0; i < ingredienti.length - 1; i++) {
@@ -53,8 +57,8 @@ public abstract class Portate {
     }
 
     public String toString() {
-        return "Tipologia: " + tipologia + "\nNome: " + nome + "\nDescrizione: " + descrizione +
+        return "\u001B[33m" + "Tipologia: " + tipologia + "\nNome: " + nome + "\nDescrizione: " + descrizione +
                 "\nIngredienti: " + elencoIngredienti() +
-                "\nPrezzo: " + prezzo + " euro" + "\n";
+                "\nPrezzo: " + prezzo + " euro" + "\n" + "\u001B[0m";
     }
 }
