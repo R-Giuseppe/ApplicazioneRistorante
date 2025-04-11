@@ -9,9 +9,11 @@ import com.google.gson.*;
 public class Menu {
 
     private final ArrayList<Portate> portate;
+    private final PortataValidator validator;
 
     public Menu() {
         this.portate = new ArrayList<>();
+        this.validator = new PortataValidator();
     }
 
     // Funzione per aggiungere una portata al menu:
@@ -29,6 +31,22 @@ public class Menu {
         int index = portate.indexOf(vecchiaPortata);
         if (index != -1) {
             portate.set(index, nuovaPortata);
+        }
+    }
+
+    // Funzione per aggiungere una portata validata al menu:
+    public void aggiungiPortataValidata(Portate portata) {
+        if (validator.validatePortata(portata)) {
+            aggiungiPortate(portata);
+            stampaMenuPerTipo(portata.getTipologia());
+        }
+    }
+
+    // Funzione per modificare una portata del menu validata:
+    public void modificaPortataValidata(Portate portataDaModificare, Portate portataModificata) {
+        if (validator.validatePortata(portataModificata)) {
+            modificaPortata(portataDaModificare, portataModificata);
+            stampaMenuPerTipo(portataModificata.getTipologia());
         }
     }
 
