@@ -1,8 +1,8 @@
 public interface IInputHandler {
-    int leggiIntero(String messaggio);
-    double leggiDouble(String messaggio);
-    String leggiStringa(String messaggio);
-    String[] leggiArrayStringa(String messaggio);
-    boolean leggiBooleano(String messaggio);
-    void scannerNextLine();
+    public int leggiIntero(String messaggio);
+    public double leggiDouble(String messaggio);
+    public String leggiStringa(String messaggio);
+    public String[] leggiArrayStringa(String messaggio);
+    public boolean leggiBooleano(String messaggio);
+    public void scannerNextLine();
 }

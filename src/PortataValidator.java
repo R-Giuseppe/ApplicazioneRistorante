@@ -120,16 +120,13 @@ public class PortataValidator implements IValidator {
         if (validateNome(portata) && validateDescrizione(portata) && validatePrezzo(portata) && validateIngredienti(portata)) {
             return true;
         }
-
-        System.out.println("\u001B[38;5;208m" + "\n" + "ATTENZIONE: la portata non è stata aggiunta al menu a causa di errori di validazione." + "\u001B[0m");
         return false;
     }
 
     //=======================================================================================================
 
     // Metodo per il conteggio di caratteri numerici all'interno di una stringa di caratteri
-    @Override
-    public boolean conteggioCifreNumeriche(String stringa) {
+    private boolean conteggioCifreNumeriche(String stringa) {
         int conteggioCifreNumeriche = 0;
         int limiteCifreNumeriche = 2;
 
@@ -143,8 +140,7 @@ public class PortataValidator implements IValidator {
     }
 
     // Metodo per il conteggio di caratteri numerici all'interno di un array di stringhe
-    @Override
-    public boolean conteggioCifreNumeriche(String[] stringhe) {
+    private boolean conteggioCifreNumeriche(String[] stringhe) {
         for (String stringa : stringhe) {
             if (conteggioCifreNumeriche(stringa)) {
                 return true;
@@ -155,14 +151,12 @@ public class PortataValidator implements IValidator {
     }
 
     // Metodo che verifica se una stringa contiene solo spazi
-    @Override
-    public boolean verificaSpaziVuoti(String stringa) {
+    private boolean verificaSpaziVuoti(String stringa) {
         return stringa.trim().isEmpty();
     }
 
     // Metodo che verifica se un array di stringhe contiene elementi vuoti con solo spazi
-    @Override
-    public boolean verificaSpaziVuoti(String[] stringhe) {
+    private boolean verificaSpaziVuoti(String[] stringhe) {
         for (String stringa : stringhe) {
             if (stringa.trim().isEmpty()) {
                 return true;
