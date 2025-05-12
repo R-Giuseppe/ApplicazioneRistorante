@@ -10,7 +10,7 @@ public class InputHandler implements IInputHandler {
     public int leggiIntero(String messaggio) {
         System.out.print(messaggio);
         while (!scanner.hasNextInt()) {
-            System.out.println("Input non valido. Inserisci un numero intero.");
+            System.err.println("\u001B[31mInput non valido. Inserisci un numero intero.\u001B[0m");
             System.out.print(messaggio);
             scanner.next();
         }
@@ -21,7 +21,8 @@ public class InputHandler implements IInputHandler {
     public double leggiDouble(String messaggio) {
         System.out.print(messaggio);
         while (!scanner.hasNextDouble()) {
-            System.out.println("Input non valido. Inserisci un numero.");
+            System.out.flush();
+            System.out.println("\u001B[31mInput non valido. Inserisci un numero.\u001B[0m");
             System.out.print(messaggio);
             scanner.next();
         }
@@ -45,7 +46,7 @@ public class InputHandler implements IInputHandler {
     public boolean leggiBooleano(String messaggio) {
         System.out.print(messaggio);
         while (!scanner.hasNextBoolean()) {
-            System.out.println("Input non valido. Inserisci 'true' o 'false'.");
+            System.err.println("\u001B[31mInput non valido. Inserisci 'true' o 'false'.\u001B[0m");
             System.out.print(messaggio);
             scanner.next();
         }

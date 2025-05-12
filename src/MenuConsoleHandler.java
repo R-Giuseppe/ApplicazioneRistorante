@@ -46,7 +46,7 @@ public class MenuConsoleHandler {
                             if (tipo.equals("antipasto") || tipo.equals("primo_piatto") || tipo.equals("secondo_piatto") || tipo.equals("dessert") || tipo.equals("bevanda")) {
                                 break;
                             } else {
-                                System.err.println("\u001B[31mErrore: Tipo di portata non valido. Riprova con uno dei seguenti: antipasto, primo_piatto, secondo_piatto, dessert, bevanda.\u001B[0m");
+                                System.out.println("\u001B[31mErrore: Tipo di portata non valido. Riprova con uno dei seguenti: antipasto, primo_piatto, secondo_piatto, dessert, bevanda.\u001B[0m");
                             }
                         }
 
@@ -102,7 +102,7 @@ public class MenuConsoleHandler {
                                 break;
 
                             } catch (IllegalArgumentException e) { // gestisce l'errore relativo a un argomento non valido
-                                System.err.println("\u001B[31mErrore: " + e.getMessage() + "\u001B[0m");
+                                System.out.println("\u001B[31mErrore: " + e.getMessage() + "\u001B[0m");
                             }
                         }
                         break;
@@ -153,7 +153,7 @@ public class MenuConsoleHandler {
                                 break;
 
                             } catch (IllegalArgumentException e) {
-                                System.err.println("\u001B[31mErrore: " + e.getMessage() + "\u001B[0m");
+                                System.out.println("\u001B[31mErrore: " + e.getMessage() + "\u001B[0m");
                             }
                         }
                         break;
@@ -172,7 +172,7 @@ public class MenuConsoleHandler {
                         break;
                 }
             } catch (Exception e) {
-                System.err.println("\u001B[31mErrore inatteso: " + e.getMessage() + "\u001B[0m");
+                System.out.println("\u001B[31mErrore inatteso: " + e.getMessage() + "\u001B[0m");
             }
         }
     }
