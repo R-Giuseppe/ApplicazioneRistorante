@@ -17,7 +17,7 @@ public class Menu {
     }
 
     // Funzione per aggiungere una portata al menu:
-    public void aggiungiPortate(Portate portata) {
+    private void aggiungiPortate(Portate portata) {
         portate.add(portata);
     }
 
@@ -27,7 +27,7 @@ public class Menu {
     }
 
     // Funzione per modificare una portata del menu:
-    public void modificaPortata(Portate vecchiaPortata, Portate nuovaPortata) {
+    private void modificaPortata(Portate vecchiaPortata, Portate nuovaPortata) {
         int index = portate.indexOf(vecchiaPortata);
         if (index != -1) {
             portate.set(index, nuovaPortata);
@@ -39,6 +39,8 @@ public class Menu {
         if (validator.validatePortata(portata)) {
             aggiungiPortate(portata);
             stampaMenuPerTipo(portata.getTipologia());
+        } else {
+            System.out.println("\u001B[38;5;208m" + "\n" + "ATTENZIONE: la portata non è stata aggiunta al menu a causa di errori di validazione." + "\u001B[0m");
         }
     }
 
@@ -47,6 +49,8 @@ public class Menu {
         if (validator.validatePortata(portataModificata)) {
             modificaPortata(portataDaModificare, portataModificata);
             stampaMenuPerTipo(portataModificata.getTipologia());
+        } else {
+            System.out.println("\u001B[38;5;208m" + "\n" + "ATTENZIONE: la portata non è stata modificata a causa di errori di validazione." + "\u001B[0m");
         }
     }
 

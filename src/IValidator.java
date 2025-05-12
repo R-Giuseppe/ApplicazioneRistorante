@@ -1,11 +1,7 @@
 public interface IValidator {
-    boolean validateNome(Portate portata);
-    boolean validateDescrizione(Portate portata);
-    boolean validatePrezzo(Portate portata);
-    boolean validateIngredienti(Portate portata);
-    boolean validatePortata(Portate portata);
-    boolean conteggioCifreNumeriche(String stringa);
-    boolean conteggioCifreNumeriche(String[] stringhe);
-    boolean verificaSpaziVuoti(String stringa);
-    boolean verificaSpaziVuoti(String[] stringhe);
+     public boolean validateNome(Portate portata);
+     public boolean validateDescrizione(Portate portata);
+     public boolean validatePrezzo(Portate portata);
+     public boolean validateIngredienti(Portate portata);
+     public boolean validatePortata(Portate portata);
 }

@@ -37,56 +37,52 @@ public class MenuConsoleHandler {
                         break;
 
                     case 2: // Aggiungi una nuova portata al menu
-                        try {
-                            String tipo;
+                        String tipo;
 
-                            // ripetizione della richiesta del tipo finché non è valido
-                            while (true) {
-                                tipo = menuInputHandler.leggiStringa("Inserisci il tipo della nuova portata (antipasto, primo_piatto, secondo_piatto, dessert, bevanda): ");
+                        // ripetizione della richiesta del tipo finché non è valido
+                        while (true) {
+                            tipo = menuInputHandler.leggiStringa("Inserisci il tipo della nuova portata (antipasto, primo_piatto, secondo_piatto, dessert, bevanda): ");
 
-                                if (tipo.equals("antipasto") || tipo.equals("primo_piatto") || tipo.equals("secondo_piatto") || tipo.equals("dessert") || tipo.equals("bevanda")) {
-                                    break;
-                                } else {
-                                    System.err.println("\u001B[31mErrore: Tipo di portata non valido. Riprova con uno dei seguenti: antipasto, primo_piatto, secondo_piatto, dessert, bevanda.\u001B[0m");
-                                }
+                            if (tipo.equals("antipasto") || tipo.equals("primo_piatto") || tipo.equals("secondo_piatto") || tipo.equals("dessert") || tipo.equals("bevanda")) {
+                                break;
+                            } else {
+                                System.err.println("\u001B[31mErrore: Tipo di portata non valido. Riprova con uno dei seguenti: antipasto, primo_piatto, secondo_piatto, dessert, bevanda.\u001B[0m");
                             }
-
-                            String nome = menuInputHandler.leggiStringa("Inserisci il nome della portata: ");
-                            String descrizione = menuInputHandler.leggiStringa("Inserisci la descrizione della portata: ");
-                            double prezzo = menuInputHandler.leggiDouble("Inserisci il prezzo della portata: ");
-                            String[] ingredienti = menuInputHandler.leggiArrayStringa("Inserisci gli ingredienti della nuova portata (separati da virgola e spazio): ");
-
-                            switch (tipo) {
-                                case "antipasto" -> {
-                                    boolean vegetariano = menuInputHandler.leggiBooleano("L'antipasto è per vegetariani? (true / false): ");
-                                    Antipasti portata = new Antipasti(nome, descrizione, prezzo, ingredienti, vegetariano);
-                                    menu.aggiungiPortataValidata(portata);
-                                }
-                                case "primo_piatto" -> {
-                                    boolean contieneGlutine = menuInputHandler.leggiBooleano("Il piatto contiene glutine? (true / false): ");
-                                    PrimiPiatti portata = new PrimiPiatti(nome, descrizione, prezzo, ingredienti, contieneGlutine);
-                                    menu.aggiungiPortataValidata(portata);
-                                }
-                                case "secondo_piatto" -> {
-                                    boolean tipoCottura = menuInputHandler.leggiBooleano("Il piatto è ben cotto o al sangue? (true = ben cotto / false = al sangue): ");
-                                    SecondiPiatti portata = new SecondiPiatti(nome, descrizione, prezzo, ingredienti, tipoCottura);
-                                    menu.aggiungiPortataValidata(portata);
-                                }
-                                case "dessert" -> {
-                                    boolean contieneLattosio = menuInputHandler.leggiBooleano("Il dessert contiene lattosio? (true / false): ");
-                                    Dessert portata = new Dessert(nome, descrizione, prezzo, ingredienti, contieneLattosio);
-                                    menu.aggiungiPortataValidata(portata);
-                                }
-                                case "bevanda" -> {
-                                    boolean temperatura = menuInputHandler.leggiBooleano("La bevanda è calda o fredda? (true = fredda / false = calda):");
-                                    Bevande portata = new Bevande(nome, descrizione, prezzo, temperatura);
-                                    menu.aggiungiPortataValidata(portata);
-                                }
-                            }
-                            menuInputHandler.scannerNextLine(); // pulisce lo scanner in modo che l'input errato non interferisca con ulteriori letture.
-                        } catch (Exception e) { // altri errori generici
-                            System.err.println("\u001B[31mErrore inatteso: " + e.getMessage() + "\u001B[0m");
                         }
+
+                        String nome = menuInputHandler.leggiStringa("Inserisci il nome della portata: ");
+                        String descrizione = menuInputHandler.leggiStringa("Inserisci la descrizione della portata: ");
+                        double prezzo = menuInputHandler.leggiDouble("Inserisci il prezzo della portata: ");
+                        String[] ingredienti = menuInputHandler.leggiArrayStringa("Inserisci gli ingredienti della nuova portata (separati da virgola e spazio): ");
+
+                        switch (tipo) {
+                            case "antipasto" -> {
+                                boolean vegetariano = menuInputHandler.leggiBooleano("L'antipasto è per vegetariani? (true / false): ");
+                                Antipasti portata = new Antipasti(nome, descrizione, prezzo, ingredienti, vegetariano);
+                                menu.aggiungiPortataValidata(portata);
+                            }
+                            case "primo_piatto" -> {
+                                boolean contieneGlutine = menuInputHandler.leggiBooleano("Il piatto contiene glutine? (true / false): ");
+                                PrimiPiatti portata = new PrimiPiatti(nome, descrizione, prezzo, ingredienti, contieneGlutine);
+                                menu.aggiungiPortataValidata(portata);
+                            }
+                            case "secondo_piatto" -> {
+                                boolean tipoCottura = menuInputHandler.leggiBooleano("Il piatto è ben cotto o al sangue? (true = ben cotto / false = al sangue): ");
+                                SecondiPiatti portata = new SecondiPiatti(nome, descrizione, prezzo, ingredienti, tipoCottura);
+                                menu.aggiungiPortataValidata(portata);
+                            }
+                            case "dessert" -> {
+                                boolean contieneLattosio = menuInputHandler.leggiBooleano("Il dessert contiene lattosio? (true / false): ");
+                                Dessert portata = new Dessert(nome, descrizione, prezzo, ingredienti, contieneLattosio);
+                                menu.aggiungiPortataValidata(portata);
+                            }
+                            case "bevanda" -> {
+                                boolean temperatura = menuInputHandler.leggiBooleano("La bevanda è calda o fredda? (true = fredda / false = calda):");
+                                Bevande portata = new Bevande(nome, descrizione, prezzo, temperatura);
+                                menu.aggiungiPortataValidata(portata);
+                            }
+                        }
+                        menuInputHandler.scannerNextLine(); // pulisce lo scanner in modo che l'input errato non interferisca con ulteriori letture.
                         break;
 
                     case 3: // Rimuovi una portata dal menu
@@ -107,10 +103,6 @@ public class MenuConsoleHandler {
 
                             } catch (IllegalArgumentException e) { // gestisce l'errore relativo a un argomento non valido
                                 System.err.println("\u001B[31mErrore: " + e.getMessage() + "\u001B[0m");
-
-                            } catch (Exception e) {
-                                System.err.println("\u001B[31mErrore inatteso: " + e.getMessage() + "\u001B[0m");
-                                menuInputHandler.scannerNextLine();
                             }
                         }
                         break;
@@ -162,9 +154,6 @@ public class MenuConsoleHandler {
 
                             } catch (IllegalArgumentException e) {
                                 System.err.println("\u001B[31mErrore: " + e.getMessage() + "\u001B[0m");
-                            } catch (Exception e) {
-                                System.err.println("\u001B[31mErrore inatteso: " + e.getMessage() + "\u001B[0m");
-                                menuInputHandler.scannerNextLine();
                             }
                         }
                         break;
