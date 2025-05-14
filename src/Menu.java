@@ -9,13 +9,15 @@ import com.google.gson.*;
 public class Menu {
 
     private final ArrayList<Portate> portate;
+    private final PortataValidator validator;
 
     public Menu() {
         this.portate = new ArrayList<>();
+        this.validator = new PortataValidator();
     }
 
     // Funzione per aggiungere una portata al menu:
-    public void aggiungiPortate(Portate portata) {
+    private void aggiungiPortate(Portate portata) {
         portate.add(portata);
     }
 
@@ -25,10 +27,30 @@ public class Menu {
     }
 
     // Funzione per modificare una portata del menu:
-    public void modificaPortata(Portate vecchiaPortata, Portate nuovaPortata) {
+    private void modificaPortata(Portate vecchiaPortata, Portate nuovaPortata) {
         int index = portate.indexOf(vecchiaPortata);
         if (index != -1) {
             portate.set(index, nuovaPortata);
+        }
+    }
+
+    // Funzione per aggiungere una portata validata al menu:
+    public void aggiungiPortataValidata(Portate portata) {
+        if (validator.validatePortata(portata)) {
+            aggiungiPortate(portata);
+            stampaMenuPerTipo(portata.getTipologia());
+        } else {
+            System.out.println("\u001B[38;5;208m" + "\n" + "ATTENZIONE: la portata non è stata aggiunta al menu a causa di errori di validazione." + "\u001B[0m");
+        }
+    }
+
+    // Funzione per modificare una portata del menu validata:
+    public void modificaPortataValidata(Portate portataDaModificare, Portate portataModificata) {
+        if (validator.validatePortata(portataModificata)) {
+            modificaPortata(portataDaModificare, portataModificata);
+            stampaMenuPerTipo(portataModificata.getTipologia());
+        } else {
+            System.out.println("\u001B[38;5;208m" + "\n" + "ATTENZIONE: la portata non è stata modificata a causa di errori di validazione." + "\u001B[0m");
         }
     }
 
