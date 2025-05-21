@@ -1,0 +1,421 @@
+[
+  {
+    "vegetariano": false,
+    "nome": "crostini",
+    "descrizione": "crostini con senape, prosciutto cotto e formaggio",
+    "prezzo": 3.0,
+    "ingredienti": [
+      "prosciutto cotto",
+      "parmigiano reggiano dop",
+      "fetta di pane",
+      "uova",
+      "senape rustica",
+      "birra trappista triple ale",
+      "amido di mais",
+      "olio extravergine di oliva"
+    ],
+    "tipologia": "antipasto"
+  },
+  {
+    "vegetariano": true,
+    "nome": "quesadilla",
+    "descrizione": "quesadilla all\u0027italiana con Asiago",
+    "prezzo": 5.0,
+    "ingredienti": [
+      "asiago dop",
+      "farina messicana di mais bianco precotto",
+      "avocado",
+      "tabasco",
+      "olio extravergine di oliva",
+      "sale"
+    ],
+    "tipologia": "antipasto"
+  },
+  {
+    "vegetariano": true,
+    "nome": "omelette",
+    "descrizione": "omeletta di patate, Trentino-Alto Adige",
+    "prezzo": 8.0,
+    "ingredienti": [
+      "patate",
+      "uova",
+      "farina",
+      "olio di arachide",
+      "sale"
+    ],
+    "tipologia": "antipasto"
+  },
+  {
+    "vegetariano": false,
+    "nome": "canederli",
+    "descrizione": "mini canederli con sugo alla puttanesca",
+    "prezzo": 10.0,
+    "ingredienti": [
+      "pane multicereali",
+      "latte",
+      "uova",
+      "prezzemolo",
+      "maggiorana",
+      "erba cipollina",
+      "olio di arachide",
+      "sale",
+      "pepe"
+    ],
+    "tipologia": "antipasto"
+  },
+  {
+    "vegetariano": false,
+    "nome": "montanarine",
+    "descrizione": "montanarine con burrata e salmone affumicato",
+    "prezzo": 15.0,
+    "ingredienti": [
+      "farina 0",
+      "latte intero",
+      "olio extravergine d\u0027oliva",
+      "lievito di birra",
+      "sale fino",
+      "burrata",
+      "salmone affumicato",
+      "prezzemolo",
+      "pepe rosa in grani"
+    ],
+    "tipologia": "antipasto"
+  },
+  {
+    "vegetariano": true,
+    "nome": "salumiNuovi",
+    "descrizione": "tagliereNuovo",
+    "prezzo": 10.0,
+    "ingredienti": [
+      "salame",
+      " prosciutto",
+      " formaggio"
+    ],
+    "tipologia": "antipasto"
+  },
+  {
+    "glutine": true,
+    "nome": "spaghetti alla carbonara",
+    "descrizione": "spaghetti con uova, guanciale, pecorino romano e pepe nero",
+    "prezzo": 12.0,
+    "ingredienti": [
+      "spaghetti",
+      "uova",
+      "guanciale",
+      "pecorino romano",
+      "pepe nero"
+    ],
+    "tipologia": "primo_piatto"
+  },
+  {
+    "glutine": false,
+    "nome": "pasta al pesto",
+    "descrizione": "pasta al pesto con pomodori freschi, pinoli e parmigiano",
+    "prezzo": 10.0,
+    "ingredienti": [
+      "pasta",
+      "pesto genovese",
+      "pomodori",
+      "pinoli",
+      "parmigiano reggiano dop"
+    ],
+    "tipologia": "primo_piatto"
+  },
+  {
+    "glutine": true,
+    "nome": "risotto ai funghi",
+    "descrizione": "risotto con funghi porcini, vino bianco e burrata",
+    "prezzo": 12.0,
+    "ingredienti": [
+      "risotto",
+      "funghi porcini",
+      "vino bianco",
+      "burrata"
+    ],
+    "tipologia": "primo_piatto"
+  },
+  {
+    "glutine": false,
+    "nome": "tagliatelle al ragù",
+    "descrizione": "tagliatelle con ragù di carne, pomodori e formaggio",
+    "prezzo": 14.0,
+    "ingredienti": [
+      "tagliatelle",
+      "ragù di carne",
+      "pomodori",
+      "formaggio"
+    ],
+    "tipologia": "primo_piatto"
+  },
+  {
+    "glutine": false,
+    "nome": "pasta alla Norma",
+    "descrizione": "pasta con melanzane fritte, sugo di pomodoro, ricotta salata e basilico",
+    "prezzo": 13.0,
+    "ingredienti": [
+      "pasta",
+      "melanzane",
+      "pomodori",
+      "ricotta salata",
+      "basilico"
+    ],
+    "tipologia": "primo_piatto"
+  },
+  {
+    "tipoCottura": true,
+    "nome": "pollo alla cacciatora",
+    "descrizione": "pollo cotto in un sugo di pomodoro, cipolla, aglio, olive nere, capperi, vino rosso, rosmarino.",
+    "prezzo": 15.0,
+    "ingredienti": [
+      "pollo",
+      "pomodoro",
+      "cipolla",
+      "aglio",
+      "olive nere",
+      "capperi",
+      "vino rosso",
+      "rosmarino"
+    ],
+    "tipologia": "secondo_piatto"
+  },
+  {
+    "tipoCottura": true,
+    "nome": "arrosto di vitello",
+    "descrizione": "vitello cotto con rosmarino, salvia, vino bianco e brodo.",
+    "prezzo": 12.0,
+    "ingredienti": [
+      "vitello",
+      "salvia",
+      "vino bianco",
+      "brodo",
+      "rosmarino"
+    ],
+    "tipologia": "secondo_piatto"
+  },
+  {
+    "tipoCottura": true,
+    "nome": "spezzatino di manzo",
+    "descrizione": "manzo cotto in un sugo di pomodoro, cipolla, vino rosso, brodo, rosmarino e alloro.",
+    "prezzo": 18.0,
+    "ingredienti": [
+      "manzo",
+      "pomodoro",
+      "cipolla",
+      "vino rosso",
+      "brodo",
+      "rosmarino",
+      "alloro"
+    ],
+    "tipologia": "secondo_piatto"
+  },
+  {
+    "tipoCottura": false,
+    "nome": "scaloppine al limone",
+    "descrizione": "vitello in padella con burro, succo di limone, vino bianco e prezzemolo.",
+    "prezzo": 14.0,
+    "ingredienti": [
+      "vitello",
+      "burro",
+      "succo di limone",
+      "vino bianco",
+      "prezzemolo"
+    ],
+    "tipologia": "secondo_piatto"
+  },
+  {
+    "tipoCottura": false,
+    "nome": "bistecca alla fiorentina",
+    "descrizione": "bistecca di manzo cotta sulla griglia, servita con olio d\u0027oliva e pepe nero.",
+    "prezzo": 22.0,
+    "ingredienti": [
+      "manzo",
+      "olio d\u0027oliva",
+      "pepe nero"
+    ],
+    "tipologia": "secondo_piatto"
+  },
+  {
+    "lattosio": false,
+    "nome": "tiramisu",
+    "descrizione": "tiramisu classico italiano",
+    "prezzo": 6.0,
+    "ingredienti": [
+      "mascarpone",
+      "uova",
+      "caffe latte",
+      "cacao in polvere",
+      "zucchero a velo",
+      "savoiardi",
+      "canditi"
+    ],
+    "tipologia": "dessert"
+  },
+  {
+    "lattosio": false,
+    "nome": "cheesecake",
+    "descrizione": "cheesecake alla vaniglia con base di biscotti e crema morbida",
+    "prezzo": 7.0,
+    "ingredienti": [
+      "formaggio cremoso",
+      "biscotti digestive",
+      "zucchero",
+      "burro",
+      "vaniglia",
+      "gelatina"
+    ],
+    "tipologia": "dessert"
+  },
+  {
+    "lattosio": true,
+    "nome": "cannoli",
+    "descrizione": "cannoli siciliani",
+    "prezzo": 5.0,
+    "ingredienti": [
+      "farina 0",
+      "uova",
+      "zucchero",
+      "lievito di birra",
+      "soro",
+      "sale",
+      "pepe"
+    ],
+    "tipologia": "dessert"
+  },
+  {
+    "lattosio": true,
+    "nome": "profiteroles",
+    "descrizione": "bigné ripieni di crema pasticcera e ricoperti da cioccolato fondente",
+    "prezzo": 7.5,
+    "ingredienti": [
+      "farina",
+      "uova",
+      "burro",
+      "zucchero",
+      "latte",
+      "cioccolato fondente",
+      "panna",
+      "vaniglia"
+    ],
+    "tipologia": "dessert"
+  },
+  {
+    "lattosio": true,
+    "nome": "crumble di mele",
+    "descrizione": "crumble di mele con un cuore di frutta e croccante copertura di avena e zucchero",
+    "prezzo": 6.5,
+    "ingredienti": [
+      "mele",
+      "zucchero",
+      "burro",
+      "farina",
+      "avena",
+      "cannella"
+    ],
+    "tipologia": "dessert"
+  },
+  {
+    "temperatura": true,
+    "nome": "acqua naturale",
+    "descrizione": "acqua minerale senza gas",
+    "prezzo": 3.0,
+    "tipologia": "bevanda"
+  },
+  {
+    "temperatura": true,
+    "nome": "acqua frizzante",
+    "descrizione": "acqua minerale con gas",
+    "prezzo": 3.5,
+    "tipologia": "bevanda"
+  },
+  {
+    "temperatura": true,
+    "nome": "coca-cola",
+    "descrizione": "bibita gassata a base di cola, con un sapore dolce e un retrogusto speziato.",
+    "prezzo": 4.0,
+    "tipologia": "bevanda"
+  },
+  {
+    "temperatura": true,
+    "nome": "fanta",
+    "descrizione": "bibita dolce e gassata al gusto di arancia",
+    "prezzo": 4.0,
+    "tipologia": "bevanda"
+  },
+  {
+    "temperatura": true,
+    "nome": "sprite",
+    "descrizione": "bibita dolce gassata al gusto di limone",
+    "prezzo": 4.0,
+    "tipologia": "bevanda"
+  },
+  {
+    "temperatura": false,
+    "nome": "vino rosso",
+    "descrizione": "vino ottenuto da uve rosse, con fermentazione in contatto con le bucce",
+    "prezzo": 20.0,
+    "tipologia": "bevanda"
+  },
+  {
+    "temperatura": true,
+    "nome": "vino bianco",
+    "descrizione": "vino prodotto da uve bianche, fermentato senza bucce",
+    "prezzo": 30.0,
+    "tipologia": "bevanda"
+  },
+  {
+    "temperatura": true,
+    "nome": "vino rosato",
+    "descrizione": "vino ottenuto da uve rosse, con una fermentazione breve in contatto con le bucce",
+    "prezzo": 25.0,
+    "tipologia": "bevanda"
+  },
+  {
+    "temperatura": true,
+    "nome": "prosecco",
+    "descrizione": "vino spumante prodotto con uve Glera, tipico della zona del Veneto",
+    "prezzo": 15.0,
+    "tipologia": "bevanda"
+  },
+  {
+    "temperatura": true,
+    "nome": "birra",
+    "descrizione": "bevanda alcolica prodotta dalla fermentazione di malto d\u0027orzo e luppolo",
+    "prezzo": 6.0,
+    "tipologia": "bevanda"
+  },
+  {
+    "temperatura": false,
+    "nome": "espresso",
+    "descrizione": "caffè preparato con un\u0027alta pressione di acqua calda attraverso il caffè macinato",
+    "prezzo": 0.5,
+    "tipologia": "bevanda"
+  },
+  {
+    "temperatura": false,
+    "nome": "macchiato",
+    "descrizione": "espresso con una piccola quantità di latte caldo o schiumato",
+    "prezzo": 1.0,
+    "tipologia": "bevanda"
+  },
+  {
+    "temperatura": false,
+    "nome": "ginseng",
+    "descrizione": "bevanda a base di caffè e estratto di ginseng, con un sapore dolce e speziato",
+    "prezzo": 1.5,
+    "tipologia": "bevanda"
+  },
+  {
+    "temperatura": true,
+    "nome": "amaro del capo",
+    "descrizione": "amaro calabrese a base di erbe e agrumi",
+    "prezzo": 6.0,
+    "tipologia": "bevanda"
+  },
+  {
+    "temperatura": true,
+    "nome": "jefferson",
+    "descrizione": "amaro calabrese ricco di erbe, spezie e un retrogusto di agrumi",
+    "prezzo": 6.0,
+    "tipologia": "bevanda"
+  }
+]
